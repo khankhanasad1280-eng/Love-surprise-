@@ -1,4 +1,4 @@
-import streamlit as st
+autoplay_audio("love.mp3")import streamlit as st
 
 st.set_page_config(page_title="❤️ Secret Love Surprise ❤️", page_icon="❤️")
 

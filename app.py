@@ -1,4 +1,4 @@
-autoplay_audio("love.mp3")import streamlit as st
+
 
 st.set_page_config(page_title="❤️ Secret Love Surprise ❤️", page_icon="❤️")
 
@@ -83,3 +83,4 @@ for line in messages:
     st.markdown(f"## {line}")
 
 st.success("❤️ JIGRI YAAR FOREVER ❤️")
+autoplay_audio("love.mp3")

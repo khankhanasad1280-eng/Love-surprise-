@@ -165,3 +165,93 @@ good health, success and a long life.
 """)
 
 st.balloons()
+st.markdown("---")
+
+st.header("💌 A Letter From My Heart")
+
+letter = """
+Dear Brother SAMAD,
+
+Life becomes easier when we have a caring brother.
+
+Thank you for your love.
+Thank you for your support.
+Thank you for always standing beside me.
+
+May Allah always protect you.
+
+Never lose hope.
+
+Keep smiling.
+
+Keep praying.
+
+Keep believing in yourself.
+
+I am proud to call you my brother.
+
+❤️ Love You Brother ❤️
+"""
+
+st.info(letter)
+
+st.markdown("## 🌸 Beautiful Wishes 🌸")
+
+wishes = [
+"🤲 May Allah bless you every day.",
+"🌹 May every dream come true.",
+"✨ May happiness always stay with you.",
+"🌼 May success follow you everywhere.",
+"🕊️ May your heart always remain peaceful.",
+"💙 May your smile never fade.",
+"🌟 May Allah protect you from every hardship.",
+"❤️ May you always stay healthy."
+]
+
+for wish in wishes:
+    st.success(wish)
+    time.sleep(0.3)
+
+st.markdown("## 📜 Final Urdu Poetry")
+
+st.markdown("""
+### 🌹
+
+بھائی وہ دعا ہے،
+جو ہر گھر کی رونق ہوتا ہے۔
+
+بھائی وہ سایہ ہے،
+جو ہر مشکل میں ساتھ کھڑا ہوتا ہے۔
+
+اللہ کرے تمہاری زندگی
+ہمیشہ خوشیوں سے بھری رہے۔
+
+آمین 🤲
+""")
+
+st.markdown("## 👑 Final Wish")
+
+st.success("""
+❤️ Dear Brother SAMAD ❤️
+
+May Allah always keep you safe,
+healthy,
+successful,
+and happy.
+
+Never stop smiling.
+
+Never stop dreaming.
+
+Always remember,
+
+**You are the best brother in the world.** 🌍❤️
+""")
+
+st.snow()
+st.balloons()
+
+st.markdown(
+"<h1 style='text-align:center;color:red;'>❤️ THANK YOU BROTHER SAMAD ❤️</h1>",
+unsafe_allow_html=True,
+)

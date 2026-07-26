@@ -1,112 +1,110 @@
+import streamlit as st
 import streamlit.components.v1 as components
+import time
+
+st.set_page_config(page_title="Brother Samad ❤️", page_icon="🌹")
+
+PASSWORD = "BROTHER SAMAD"
+
+if "login" not in st.session_state:
+    st.session_state.login = False
+
+if not st.session_state.login:
+    st.title("🔒 Secret Message")
+    password = st.text_input("🔑 Enter Password", type="password")
+
+    if st.button("Unlock ❤️"):
+        if password == PASSWORD:
+            st.session_state.login = True
+            st.rerun()
+        else:
+            st.error("Wrong Password!")
+
+    st.stop()
 
 components.html("""
 <style>
 body{
-    background:linear-gradient(135deg,#fff8dc,#e6ffe6);
-    overflow:hidden;
+background:#fff8f0;
+overflow:hidden;
 }
-
-.welcome{
-    text-align:center;
-    font-size:48px;
-    font-weight:bold;
-    color:#d63384;
-    animation:zoom 2s ease-in-out infinite alternate;
+h1{
+text-align:center;
+color:#d63384;
+animation:zoom 2s infinite alternate;
 }
-
 .item{
-    position:fixed;
-    font-size:35px;
-    animation:float 10s linear infinite;
+position:fixed;
+font-size:35px;
+animation:float 8s linear infinite;
 }
-
-@keyframes zoom{
-    from{transform:scale(0.9);}
-    to{transform:scale(1.1);}
-}
-
 @keyframes float{
-    0%{transform:translateY(100vh);}
-    100%{transform:translateY(-120px);}
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-120px);}
+}
+@keyframes zoom{
+from{transform:scale(0.9);}
+to{transform:scale(1.1);}
 }
 </style>
 
-<div class="welcome">🌸 Welcome Brother SAMAD 🌸</div>
+<h1>🌸 WELCOME BROTHER SAMAD 🌸</h1>
 
-<div class="item" style="left:10%;animation-delay:0s;">🌹</div>
-<div class="item" style="left:25%;animation-delay:2s;">🌼</div>
-<div class="item" style="left:40%;animation-delay:4s;">🐝</div>
-<div class="item" style="left:55%;animation-delay:1s;">🌹</div>
-<div class="item" style="left:70%;animation-delay:3s;">🌼</div>
-<div class="item" style="left:85%;animation-delay:5s;">🐝</div>
+<div class="item" style="left:5%">🌹</div>
+<div class="item" style="left:20%;animation-delay:1s">🌼</div>
+<div class="item" style="left:35%;animation-delay:2s">🐝</div>
+<div class="item" style="left:50%;animation-delay:3s">🌹</div>
+<div class="item" style="left:65%;animation-delay:4s">🌼</div>
+<div class="item" style="left:80%;animation-delay:5s">🐝</div>
+""", height=400)
 
+time.sleep(4)
 
-""", height=350)
-# ❤️ Dear Brother SAMAD ❤️
+st.balloons()
 
-🌹 My Dear Brother SAMAD,
+st.title("❤️ Dear Brother SAMAD ❤️")
 
-You are not just my brother,
+st.markdown("""
+## My Dear Brother,
+
+You are not only my brother,
 you are my strength,
 my support,
-and one of the greatest blessings in my life.
+and my biggest blessing.
 
-No matter what happens,
-I know you will always stand by my side.
+Thank you for always caring for me.
 
-Thank you for always caring for me,
-encouraging me,
-and making my life better.
+May Allah bless you with happiness,
+success and good health.
 
-May Allah bless you with
-good health,
-success,
-happiness,
-and a long beautiful life.
+Never stop believing in yourself.
 
-I pray that every dream of yours comes true.
+Always smile.
 
-Always keep smiling,
-stay humble,
-and never stop believing in yourself.
+Always pray.
 
-## ❤️ A Message From My Heart
+Always stay kind.
 
-A brother is a gift from Allah,
-a friend for life,
-and a protector in every situation.
-
-I am proud to have a brother like you.
-
-## 🌙 اردو پیغام
+### اردو پیغام
 
 پیارے بھائی سماد،
 
-آپ صرف میرے بھائی نہیں،
-بلکہ میری زندگی کی سب سے بڑی طاقت ہو۔
+آپ میری زندگی کی سب سے بڑی نعمت ہیں۔
 
 اللہ تعالیٰ آپ کو ہمیشہ
-صحت،
-خوشی،
-کامیابی،
-اور عزت عطا فرمائے۔
+خوش رکھے،
+صحت دے،
+کامیابی دے،
+اور ہر خوشی عطا فرمائے۔
 
-میری دعا ہے کہ
-آپ کی ہر جائز دعا قبول ہو،
-اور آپ ہمیشہ مسکراتے رہیں۔
+### شاعری
 
-## 🌹 اردو شاعری
+بھائی وہ رشتہ ہے،
+جو ہر مشکل میں ساتھ دیتا ہے۔
 
-بھائی وہ سایہ ہے،
-جو ہر مشکل میں ساتھ کھڑا رہتا ہے۔
+اللہ آپ کو ہمیشہ اپنی امان میں رکھے۔
 
-بھائی وہ دعا ہے،
-جو اللہ کی سب سے خوبصورت نعمت ہوتی ہے۔
+❤️ From: ASAD KHAN ❤️
+""")
 
-اللہ کرے آپ کی زندگی
-ہمیشہ خوشیوں سے بھری رہے۔
-
-❤️ Love You My Brother ❤️
-
-## 👑 From: ASAD KHAN
+st.success("🤲 Allah Bless You Always ❤️")

@@ -108,3 +108,60 @@ Always stay kind.
 """)
 
 st.success("🤲 Allah Bless You Always ❤️")
+st.markdown("---")
+
+st.header("💙 A Special Message")
+
+english = [
+"💙 My Dear Brother SAMAD,",
+"💙 You are one of the greatest blessings in my life.",
+"💙 Thank you for always supporting me.",
+"💙 You always encourage me to become better.",
+"💙 Your kindness inspires everyone around you.",
+"💙 I pray that Allah grants you success.",
+"💙 May every dream of yours come true.",
+"💙 Stay humble and keep smiling.",
+"💙 Never stop believing in yourself.",
+"💙 I am proud to have a brother like you."
+]
+
+for line in english:
+    st.write(line)
+    time.sleep(0.2)
+
+st.markdown("## 🌙 اردو پیغام")
+
+urdu = [
+"❤️ پیارے بھائی سماد،",
+"🌹 آپ میری زندگی کی سب سے بڑی نعمت ہیں۔",
+"🌹 اللہ تعالیٰ آپ کو ہمیشہ خوش رکھے۔",
+"🌹 آپ کو صحت، عزت اور کامیابی عطا فرمائے۔",
+"🌹 آپ کی ہر جائز دعا قبول ہو۔",
+"🌹 آپ ہمیشہ مسکراتے رہیں۔",
+"🌹 اللہ آپ کو ہر برائی سے محفوظ رکھے۔",
+"🌹 میں ہمیشہ آپ کے لیے دعا گو رہوں گا۔"
+]
+
+for line in urdu:
+    st.write(line)
+    time.sleep(0.2)
+
+st.markdown("## 🌹 Poetry")
+
+st.markdown("""
+> **A brother's love is pure and true,**  
+> **A precious gift from Allah to you.**  
+> **Through every joy and every test,**  
+> **May Allah always give you the best.**
+""")
+
+st.markdown("## 🤲 Last Wish")
+
+st.success("""
+🌹 May Allah bless you with happiness,
+good health, success and a long life.
+
+❤️ Stay Happy Brother SAMAD ❤️
+""")
+
+st.balloons()

@@ -43,3 +43,70 @@ body{
 
 
 """, height=350)
+# ❤️ Dear Brother SAMAD ❤️
+
+🌹 My Dear Brother SAMAD,
+
+You are not just my brother,
+you are my strength,
+my support,
+and one of the greatest blessings in my life.
+
+No matter what happens,
+I know you will always stand by my side.
+
+Thank you for always caring for me,
+encouraging me,
+and making my life better.
+
+May Allah bless you with
+good health,
+success,
+happiness,
+and a long beautiful life.
+
+I pray that every dream of yours comes true.
+
+Always keep smiling,
+stay humble,
+and never stop believing in yourself.
+
+## ❤️ A Message From My Heart
+
+A brother is a gift from Allah,
+a friend for life,
+and a protector in every situation.
+
+I am proud to have a brother like you.
+
+## 🌙 اردو پیغام
+
+پیارے بھائی سماد،
+
+آپ صرف میرے بھائی نہیں،
+بلکہ میری زندگی کی سب سے بڑی طاقت ہو۔
+
+اللہ تعالیٰ آپ کو ہمیشہ
+صحت،
+خوشی،
+کامیابی،
+اور عزت عطا فرمائے۔
+
+میری دعا ہے کہ
+آپ کی ہر جائز دعا قبول ہو،
+اور آپ ہمیشہ مسکراتے رہیں۔
+
+## 🌹 اردو شاعری
+
+بھائی وہ سایہ ہے،
+جو ہر مشکل میں ساتھ کھڑا رہتا ہے۔
+
+بھائی وہ دعا ہے،
+جو اللہ کی سب سے خوبصورت نعمت ہوتی ہے۔
+
+اللہ کرے آپ کی زندگی
+ہمیشہ خوشیوں سے بھری رہے۔
+
+❤️ Love You My Brother ❤️
+
+## 👑 From: ASAD KHAN

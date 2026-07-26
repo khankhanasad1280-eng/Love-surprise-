@@ -1,71 +1,92 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="PIP - Pak Investment Profit",
-    page_icon="💰",
-    layout="wide"
-)
+st.set_page_config(page_title="💙 Best Friend 💙", page_icon="🤝")
 
-st.title("💰 PIP - Pak Investment Profit")
-st.subheader("Demo Investment Dashboard")
+PASSWORD = "IKRAM FRIEND"
 
-menu = st.sidebar.selectbox(
-    "Select Menu",
-    [
-        "Dashboard",
-        "Investment Plans",
-        "Deposit Request",
-        "Withdraw Request",
-        "Profit Calculator",
-        "Profile"
-    ]
-)
+if "login" not in st.session_state:
+    st.session_state.login = False
 
-if menu == "Dashboard":
-    st.success("Welcome to PIP Demo")
-    st.metric("Total Balance", "$0.00")
-    st.metric("Total Profit", "$0.00")
-    st.metric("Active Plans", "0")
+if not st.session_state.login:
+    st.title("🔒 Secret Friendship")
+    st.write("💙 Please Enter Password")
+    password = st.text_input("🔑 Password", type="password")
 
-elif menu == "Investment Plans":
-    st.header("Investment Plans")
+    if st.button("Unlock 🤝"):
+        if password == PASSWORD:
+            st.session_state.login = True
+            st.rerun()
+        else:
+            st.error("❌ Wrong Password!")
 
-    st.info("Starter Plan")
-    st.write("- Investment: $100")
-    st.write("- Demo Profit: 5%")
+    st.stop()
 
-    st.info("Premium Plan")
-    st.write("- Investment: $500")
-    st.write("- Demo Profit: 8%")
+st.balloons()
 
-    st.info("VIP Plan")
-    st.write("- Investment: $1000")
-    st.write("- Demo Profit: 10%")
+st.title("🤝 A Special Message For IKRAM 🤝")
 
-elif menu == "Deposit Request":
-    st.header("Deposit Request (Demo Only)")
+st.markdown("""
+# 💙 Dear IKRAM 💙
 
-    amount = st.number_input("Enter Amount", min_value=0)
+🌹 A true friend is one of life's greatest blessings.
 
-    method = st.selectbox(
-        "Payment Method",
-        ["JazzCash", "Easypaisa", "Bank Transfer"]
-    )
+🌹 You have always been a kind and sincere friend.
 
-    if st.button("Submit Deposit"):
-        st.success("Demo deposit request submitted.")
+🌹 Your friendship means more than words can describe.
 
-elif menu == "Withdraw Request":
-    st.header("Withdraw Request (Demo Only)")
+🌹 Never stop believing in yourself.
 
-    amount = st.number_input("Withdraw Amount", min_value=0)
+🌹 Keep smiling because your smile inspires others.
 
-    if st.button("Submit Withdraw"):
-        st.success("Demo withdrawal request submitted.")
+🌹 Stay humble, stay honest and always help people.
 
-elif menu == "Profit Calculator":
-    st.header("Profit Calculator")
+🌹 Success comes to those who never give up.
 
-    invest = st.number_input("Investment Amount", min_value=0.0)
+🌹 Always respect your parents and teachers.
 
-    rate
+🌹 Keep your heart clean and your intentions pure.
+
+🌹 A real friend stands beside you in every situation.
+
+## ✨ Poetry
+
+**Friends like you are rare to find,  
+Kind at heart and strong in mind.  
+Through every joy and every pain,  
+True friendship will always remain.**
+
+## 🌹 Advice
+
+💙 Believe in yourself.
+
+💙 Never lose hope.
+
+💙 Keep learning every day.
+
+💙 Respect everyone.
+
+💙 Pray to Allah and stay thankful.
+
+## 🌙 اردو پیغام
+
+تم صرف ایک دوست نہیں،
+بلکہ ایک سچے اور مخلص انسان ہو۔
+
+اللہ تمہیں ہمیشہ خوش رکھے،
+تمہاری ہر دعا قبول ہو،
+اور تم زندگی میں ہمیشہ کامیاب رہو۔
+
+## 🌹 اردو شاعری
+
+دوستی کا رشتہ انمول ہوتا ہے،
+ہر دل کے بہت قریب ہوتا ہے۔
+
+وقت بدل جائے تو بدل جائے،
+سچا دوست ہمیشہ نصیب ہوتا ہے۔
+
+💙 ہمیشہ خوش رہو، مسکراتے رہو۔
+
+## 👑 From: ASAD KHAN
+""")
+
+st.success("🤝 Friendship Forever 🤝")

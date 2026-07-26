@@ -1,136 +1,85 @@
-st.markdown("""
-# ❤️ Tum Mere JIGRI YAAR Ho ❤️
+import streamlit as st
 
-💖 Tum meri zindagi ka bohat khoobsurat hissa ho.
+st.set_page_config(page_title="❤️ Secret Love Surprise ❤️", page_icon="❤️")
 
-💖 Tum sirf dost nahi ho.
+PASSWORD = "JIGRI YAAR ASAD خان AND CHAND"
 
-💖 Tum mere sab se pyare JIGRI YAAR ho.
+if "login" not in st.session_state:
+    st.session_state.login = False
 
-💖 Tum jaisa dost har kisi ko nahi milta.
+if not st.session_state.login:
+    st.title("🔐 Secret Surprise ❤️")
+    st.write("Password enter karo ❤️")
 
-💖 Main Allah ka shukar ada karta hoon ke tum meri zindagi mein aaye.
+    password = st.text_input("Password", type="password")
 
-💖 Tumhari dosti mere liye ek qeemti tohfa hai.
+    if st.button("Unlock ❤️"):
+        if password == PASSWORD:
+            st.session_state.login = True
+            st.rerun()
+        else:
+            st.error("❌ Wrong Password")
 
-💖 Jab bhi udaas hota hoon, tum yaad aate ho.
+    st.stop()
 
-💖 Tumhari muskurahat dil ko sukoon deti hai.
+st.balloons()
 
-💖 Tumhari har baat dil ko achi lagti hai.
+st.title("❤️ JIGRI YAAR ❤️")
 
-💖 Main dua karta hoon ke tum hamesha khush raho.
+messages = [
+"🌹 Tum mera sab se pyara dost ho.",
+"🌹 Tum mera JIGRI YAAR ho.",
+"🌹 Tumhari dosti meri zindagi ki sab se badi khushi hai.",
+"🌹 Allah tumhe hamesha khush rakhe.",
+"🌹 Main hamesha tumhare saath hoon.",
+"🌹 Tum bohat special ho.",
+"🌹 Tumhari smile sab se best hai.",
+"🌹 Never change yourself.",
+"🌹 You are amazing.",
+"🌹 You are my best friend.",
+"🌹 Stay happy forever.",
+"🌹 Stay blessed.",
+"🌹 You make everyone smile.",
+"🌹 Your friendship is priceless.",
+"🌹 Thank you for everything.",
+"🌹 Friends forever.",
+"🌹 You are a real hero.",
+"🌹 Believe in yourself.",
+"🌹 Keep shining.",
+"🌹 Always stay strong.",
+"❤️ میری دعا ہے کہ تم ہمیشہ خوش رہو۔",
+"❤️ تم میری زندگی کا خوبصورت حصہ ہو۔",
+"❤️ تم جیسا دوست قسمت والوں کو ملتا ہے۔",
+"❤️ تم ہمیشہ کامیاب رہو۔",
+"❤️ اللہ تمہیں ہر خوشی دے۔",
+"❤️ تمہاری دوستی پر فخر ہے۔",
+"❤️ ہمیشہ مسکراتے رہو۔",
+"❤️ تم بہت اچھے انسان ہو۔",
+"❤️ کبھی بدلنا مت۔",
+"❤️ تم میری طاقت ہو۔",
+"✨ دوستی وہ خزانہ ہے جو کبھی ختم نہیں ہوتا۔",
+"✨ تم جیسا یار ہر کسی کو نہیں ملتا۔",
+"✨ ہماری دوستی ہمیشہ قائم رہے۔",
+"✨ تمہاری عزت ہمیشہ میرے دل میں رہے گی۔",
+"✨ تم میرے بھائی جیسے ہو۔",
+"📜 شعر:",
+"دوستی نام ہے وفا کا،",
+"دوستی نام ہے دعا کا۔",
+"دوستی نام ہے مسکراہٹ کا،",
+"دوستی نام ہے محبت کا۔",
+"💖 You are unforgettable.",
+"💖 Thank you for being my friend.",
+"💖 Best Friends Forever.",
+"💖 Stay healthy.",
+"💖 Stay successful.",
+"💖 Never give up.",
+"💖 You are my JIGRI YAAR.",
+"💖 I respect you.",
+"💖 I wish you all the happiness.",
+"👑 From: ASAD خان ❤️"
+]
 
-💖 Allah tumhari har dua qabool kare.
+for line in messages:
+    st.markdown(f"## {line}")
 
-💖 Allah tumhein lambi aur khush zindagi de.
-
-💖 Kabhi bhi apni muskurahat mat khona.
-
-💖 Tum meri taqat ho.
-
-💖 Tum meri khushi ho.
-
-💖 Tum meri duaon ka hissa ho.
-
-💖 Hamari dosti hamesha salamat rahe.
-
-💖 Main hamesha tumhare saath hoon.
-
-💖 Chahe kitni bhi mushkilein aa jayein.
-
-💖 Main kabhi tumhara saath nahi chhorunga.
-
-💖 Tum mere liye bohat khaas ho.
-
-💖 Tum meri izzat ho.
-
-💖 Tum mera fakhar ho.
-
-💖 Tum meri zindagi ki sab se khoobsurat yaad ho.
-
-💖 Tumhari dosti meri sab se badi daulat hai.
-
-💖 Main hamesha tumhari izzat karunga.
-
-💖 Tum hamesha mere JIGRI YAAR rahoge.
-
-💖 Hamari dosti duniya ki sab se pyari dosti hai.
-
-💖 Kisi ki nazar na lage.
-
-💖 Allah hamari dosti ko hamesha qaim rakhe.
-
-🌹 تم صرف میرے دوست نہیں ہو۔
-
-🌹 تم میرے سب سے پیارے جگری یار ہو۔
-
-🌹 اللہ تمہیں ہمیشہ خوش رکھے۔
-
-🌹 اللہ تمہیں ہر کامیابی عطا کرے۔
-
-🌹 تمہاری ہر خواہش پوری ہو۔
-
-🌹 تمہاری زندگی خوشیوں سے بھر جائے۔
-
-🌹 تم ہمیشہ مسکراتے رہو۔
-
-🌹 تمہاری دوستی میرے لیے فخر ہے۔
-
-🌹 تم ہمیشہ میرے دل میں رہو گے۔
-
-🌹 میں ہمیشہ تمہارا ساتھ دوں گا۔
-
-🌹 کبھی بھی خود کو اکیلا مت سمجھنا۔
-
-🌹 میں ہر مشکل میں تمہارے ساتھ ہوں۔
-
-🌹 ہماری دوستی ہمیشہ قائم رہے گی۔
-
-🌹 اللہ ہمیں ہمیشہ خوش رکھے۔
-
-🌹 تم میرے دل کے بہت قریب ہو۔
-
-🌹 تم میری زندگی کی سب سے خوبصورت نعمت ہو۔
-
-🌹 تم ہمیشہ میرے جگری یار رہو گے۔
-
-❤️ Thank You For Everything.
-
-❤️ Stay Happy Forever.
-
-❤️ I Respect You.
-
-❤️ You Are My Best Friend.
-
-❤️ I Am Lucky To Have You.
-
-❤️ Forever Friends.
-
-# ❤️ From: ASAD KHAN ❤️
-password = st.text_input("🔑 Enter Password", type="password")
-
-if st.button("Unlock ❤️"):
-    if password == "JIGRI YAAR ASAD خان AND CHAND":
-        st.session_state.login = True
-        st.rerun()
-    else:
-        st.error("❌ Wrong Password! Try Again.")import streamlit as st
-import base64
-
-def autoplay_audio(file_path):
-    with open(file_path, "rb") as f:
-        data = f.read()
-
-    b64 = base64.b64encode(data).decode()
-
-    md = f
-    <audio autoplay loop controls>
-        <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
-    </audio>
-    
-
-    st.markdown(md, unsafe_allow_html=True)
-
-# Password unlock ke baad ye line chalao
-autoplay_audio("love.mp3")
+st.success("❤️ JIGRI YAAR FOREVER ❤️")
